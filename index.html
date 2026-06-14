@@ -3,14 +3,14 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; padding: 0; overflow: hidden; }
+    body { margin: 0; padding: 0; overflow: hidden; background-color: #efd6ac; }
     .ticker-container {
       width: 100vw;
-      height: 40px; /* Reducido para que no sea ancho */
+      height: 40px;
       display: flex;
       align-items: center;
-      background-color: #efd6ac; /* Color amarillo de image_0296fc.png */
-      color: #000000; /* Letras negras */
+      background-color: #efd6ac;
+      color: #000000;
       font-family: 'Nunito', sans-serif;
       font-weight: 700;
       font-size: 18px;
@@ -19,12 +19,13 @@
     }
     .ticker-text {
       display: inline-block;
-      padding-left: 100%;
-      animation: ticker 25s linear infinite;
+      /* Inicia fuera de la pantalla a la izquierda para ir hacia la derecha */
+      padding-right: 100%;
+      animation: ticker 40s linear infinite; 
     }
     @keyframes ticker {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(-100%, 0); }
+      0% { transform: translate(-100%, 0); }
+      100% { transform: translate(100%, 0); }
     }
   </style>
 </head>
