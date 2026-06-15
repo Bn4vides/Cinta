@@ -3,19 +3,22 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; padding: 0; overflow: hidden; }
+    body { margin: 0; padding: 0; background-color: transparent; }
     .ticker-container {
-      width: 100vw;
-      height: 40px;
+      width: 100%;
+      height: 40px; /* Altura fija para que sea una cinta */
       display: flex;
       align-items: center;
-      background-color: #efd6ac;
+      background-color: #efd6ac; /* Solo la cinta es amarilla */
       color: #000000;
       font-family: 'Nunito', sans-serif;
       font-weight: 700;
       font-size: 18px;
       white-space: nowrap;
       overflow: hidden;
+      position: absolute; /* Mantiene la cinta en su lugar */
+      top: 0;
+      left: 0;
     }
     .ticker-text {
       display: inline-block;
