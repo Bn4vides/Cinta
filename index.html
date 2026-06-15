@@ -16,16 +16,17 @@
       font-size: 18px;
       white-space: nowrap;
       overflow: hidden;
+      position: relative;
     }
     .ticker-text {
       display: inline-block;
-      /* Inicia fuera de la pantalla a la izquierda para ir hacia la derecha */
-      padding-right: 100%;
-      animation: ticker 40s linear infinite; 
+      position: absolute;
+      /* Animación de 40s suave */
+      animation: ticker 40s linear infinite;
     }
     @keyframes ticker {
-      0% { transform: translate(-100%, 0); }
-      100% { transform: translate(100%, 0); }
+      0% { left: -100%; }
+      100% { left: 100%; }
     }
   </style>
 </head>
