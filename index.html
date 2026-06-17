@@ -6,19 +6,26 @@
     body { margin: 0; padding: 0; background-color: transparent; }
     
     .ticker-container {
-      width: 100%;
-      height: 60px; 
-      display: flex;
-      align-items: center;
-      background-color: #2C333B; 
-      color: #FFFFFF;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      overflow: hidden; /* Oculta lo que sale del borde */
-      position: absolute;
-      top: 0;
-      left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #2C333B;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  /* ESTAS LÍNEAS ELIMINAN CUALQUIER BORDE O SOMBRA DEL CONTENEDOR */
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
     }
 
     .ticker-text {
